@@ -13,7 +13,7 @@ function Login() {
   return (
     <Container>
       <Head>
-        <title>Login | Whatsapp Clone</title>
+        <title>Login | Vipi</title>
       </Head>
 
       <LoginContainer>
