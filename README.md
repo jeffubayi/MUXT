@@ -1,33 +1,45 @@
-# Chat-app
-Chat application inspired by Whatsapp.
+## Whats In
 
-## Project 
+Search and view your favourite movies
 
- - Login with Google Provider using Google's Firebase authentication service ;
- - Data storage with the storage service of Firebase;
- 
+View deployed instance [whatsIn.com](http://localhost:3000)
 
-## 💻 Tecnologias
- - [React](https://pt-br.reactjs.org/)
- - [Nextjs](https://nextjs.org/)
- - [Firebase](https://firebase.google.com/docs/auth/web/start)
- - [Typescript](https://www.typescriptlang.org/)
- - [Material-UI](https://v4.mui.com/)
- - [Moment](https://momentjs.com/)
- - [timeago-react](https://www.npmjs.com/package/timeago-react)
+### Technology
 
-### **Installation**
+-  Nextjs
+-  Material UI
+-  Typescript
+-  OMDB api
+
+### How to run the app locally
 
 ```bash
+# Checkout to the current branch
+  git checkout jeff
 
-$ git clone https://github.com/arthurllopes/chatapp.git
-$ cd chat-app
+# install dependencies
+  yarn 
+
+# start the app locally
+  yarn dev
 ```
 
-# Run locally
-```bash
-yarn && yarn  dev
-```
-<br>
+## Features
+
+- Search for movies 
+- View movie details 
+- Like favourite movie
+- Mobile responsive view
+
+## Tests
+To test if any requests and responses are fetched from the omdb api endpoint
+i.e james bond movies
+
+### get movies by name: 
+ [http:localhost:3000/api/getMoviesByName?name=james bond](http:localhost:3000/api/getMoviesById?id=tt0366629)
+### get movie by id :
+
+ [http:localhost:3000/api/getMoviesById?id=tt0366629](http:localhost:3000/api/getMoviesById?id=tt0366629)
+  
 
 
