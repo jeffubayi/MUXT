@@ -1,45 +1,15 @@
-## Whats In
+# Qwetu
 
-Search and view your favourite movies
+Find and list hostels for sale or for rent. This is a React / Firebase v9 project
 
-View deployed instance [whatsIn.com](http://localhost:3000)
+## Usage
 
-### Technology
+### Geolocation
 
--  Nextjs
--  Material UI
--  Typescript
--  OMDB api
+The listings use Google geocoding to get the coords from the address field. You need to either rename .env.example to .env and add your Google Geocode API key OR in the **CreateListing.jsx** file you can set **geolocationEnabled** to "false" and it will add a lat/lng field to the form.
 
-### How to run the app locally
+### Run
 
 ```bash
-# Checkout to the current branch
-  git checkout jeff
-
-# install dependencies
-  yarn 
-
-# start the app locally
-  yarn dev
+npm start
 ```
-
-## Features
-
-- Search for movies 
-- View movie details 
-- Like favourite movie
-- Mobile responsive view
-
-## Tests
-To test if any requests and responses are fetched from the omdb api endpoint
-i.e james bond movies
-
-### get movies by name: 
- [http:localhost:3000/api/getMoviesByName?name=james bond](http:localhost:3000/api/getMoviesById?id=tt0366629)
-### get movie by id :
-
- [http:localhost:3000/api/getMoviesById?id=tt0366629](http:localhost:3000/api/getMoviesById?id=tt0366629)
-  
-
-
