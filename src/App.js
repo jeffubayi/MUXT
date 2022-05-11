@@ -47,18 +47,3 @@ function App() {
 
 export default App
 
-try {
-  await batch.commit();
-  //redirects to list view on success
-  router.push(
-    {
-      pathname: "/agents",
-    },
-    `/agents`
-  );
-  toast.success("Agent(s) successfully created");
-} catch (error) {
-  console.log(error);
-  toast.error("Failed create agent(s)");
-}
-};
