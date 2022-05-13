@@ -97,7 +97,7 @@ function Offers() {
   return (
     <div className='category'>
       <header>
-        <p className='pageHeader'>Offers</p>
+        <p className='pageHeader'>Hostels</p>
       </header>
 
       {loading ? (
