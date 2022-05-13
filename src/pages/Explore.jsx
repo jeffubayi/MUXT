@@ -7,13 +7,18 @@ function Explore() {
   return (
     <div className='explore'>
       <header>
-        <p className='pageHeader'>Explore</p>
+        <img
+              src="https://howto.co.ke/wp-content/uploads/2019/09/qwetu_logo-696x251.png"
+              alt='qwetu'
+              height={55}
+              width={140}
+            />
       </header>
 
       <main>
         <Slider />
 
-        <p className='exploreCategoryHeading'>Categories</p>
+        <p className='exploreCategoryHeading'>Take your pick from our residences below.</p>
         <div className='exploreCategories'>
           <Link to='/category/rent'>
             <img
@@ -21,7 +26,7 @@ function Explore() {
               alt='rent'
               className='exploreCategoryImg'
             />
-            <p className='exploreCategoryName'>Places for rent</p>
+            <p className='exploreCategoryName'>Hostels for rent</p>
           </Link>
           <Link to='/category/sale'>
             <img
@@ -29,7 +34,7 @@ function Explore() {
               alt='sell'
               className='exploreCategoryImg'
             />
-            <p className='exploreCategoryName'>Places for sale</p>
+            <p className='exploreCategoryName'>Houses for sale</p>
           </Link>
         </div>
       </main>
