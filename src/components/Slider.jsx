@@ -6,12 +6,13 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Spinner from "./Spinner";
+import {useMediaQuery} from '@react-hook/media-query'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function Slider() {
   const [loading, setLoading] = useState(true);
   const [listings, setListings] = useState(null);
-
+  const matches = useMediaQuery('(min-width:400px)');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -77,7 +78,7 @@ function Slider() {
           Most preferred accommodation in Nairobi.
         </p>
 
-        <Swiper slidesPerView={2} pagination={{ clickable: true }}>
+        <Swiper slidesPerView={matches ? 2 : 1} pagination={{ clickable: true }}>
           {listing.map(( data ) => (
             <SwiperSlide
               key={data.id}
